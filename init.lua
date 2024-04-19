@@ -829,11 +829,8 @@ require('lazy').setup({
 
 
 -- Set tab to 4 spaces
--- vim.o.tabstop = 4
+vim.o.tabstop = 4
 -- pressing tab will insert spaces insert of tab
--- vim.o.expandtab = true
+vim.o.expandtab = true
 -- Set indenting usinv > to 4 spacem
--- vim.o.shiftwidth = 4
-
-vim.g.sleuth_automatic_tabs = 1
-vim.g.sleuth_tab_size = 4
+vim.o.shiftwidth = 4

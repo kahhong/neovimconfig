@@ -142,6 +142,14 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
+  {
+      'windwp/nvim-autopairs',
+      event = "InsertEnter",
+      config = true
+      -- use opts = {} for passing setup options
+      -- this is equalent to setup({}) function
+  },
+
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
@@ -810,9 +818,11 @@ require('lazy').setup({
 
 
 -- Set tab to 4 spaces
-vim.o.tabstop = 4
+-- vim.o.tabstop = 4
 -- pressing tab will insert spaces insert of tab
-vim.o.expandtab = true
--- Set indenting usinv > to 4 spaces
-vim.o.shiftwidth = 4
+-- vim.o.expandtab = true
+-- Set indenting usinv > to 4 spacem
+-- vim.o.shiftwidth = 4
 
+vim.g.sleuth_automatic_tabs = 1
+vim.g.sleuth_tab_size = 4

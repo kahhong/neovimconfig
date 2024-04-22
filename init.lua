@@ -834,3 +834,9 @@ vim.o.tabstop = 4
 vim.o.expandtab = true
 -- Set indenting usinv > to 4 spacem
 vim.o.shiftwidth = 4
+
+-- Set default shell to PowerShell
+vim.o.shell = "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+-- vim.opt.shell = 'pwsh'
+vim.o.shellcmdflag = '-nologo -noprofile -ExecutionPolicy RemoteSigned -command'
+vim.o.shellxquote = ''
